@@ -117,7 +117,7 @@ db_query_fields.MSSQLServerConnection <- function(conn, sql, ...) {
 }
 
 #' @export
-src_translate_env.src_mssql <- function(x) {
+sql_translate_env.src_mssql <- function(x) {
   sql_variant(
     base_scalar,
     sql_translator(.parent = base_agg,
